@@ -6,7 +6,8 @@ import { RegisterComponent } from './components/register/register.component';
 import { ForgetComponent } from './components/forget/forget.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { StudentsListComponent } from './components/students-list/students-list.component';
-import { NavigationComponent } from './components/navigation/navigation.component';
+import { SuccessComponent } from './components/success/success.component';
+import { MoyComponent } from './components/moy/moy.component';
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'login' },
   { path: 'login', component: LogInComponent },
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path: 'forget', component: ForgetComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'studentList', component: StudentsListComponent },
-  { path: 'navigation', component: NavigationComponent }
+  { path: 'success', component: SuccessComponent },
+  { path: 'moy', component: MoyComponent }
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

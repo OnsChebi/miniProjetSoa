@@ -1,23 +1,23 @@
 import { Component } from '@angular/core';
-import {MatSidenavModule} from '@angular/material/sidenav';
+
 export interface PeriodicElement {
   class: string;
-  position: number;
-  Date: number;
+  id: number;
+  Date: String;
   Time: string;
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, class: 'Hydrogen', Date: 1.0079, Time: 'H'},
-  {position: 2, class: 'Helium', Date: 4.0026, Time: 'He'},
-  {position: 3, class: 'Lithium', Date: 6.941, Time: 'Li'},
-  {position: 4, class: 'Beryllium', Date: 9.0122, Time: 'Be'},
-  {position: 5, class: 'Boron', Date: 10.811, Time: 'B'},
-  {position: 6, class: 'Carbon', Date: 12.0107, Time: 'C'},
-  {position: 7, class: 'Nitrogen', Date: 14.0067, Time: 'N'},
-  {position: 8, class: 'Oxygen', Date: 15.9994, Time: 'O'},
-  {position: 9, class: 'Fluorine', Date: 18.9984, Time: 'F'},
-  {position: 10, class: 'Neon', Date: 20.1797, Time: 'Ne'},
+  {id: 1, class: 'DMWM-A', Date: '10/9', Time: '10:15-12:00'},
+  {id: 2, class: 'Data Science', Date: '11/9', Time: '13:00-15:00'},
+  {id: 3, class: 'Data Science', Date:'05/10', Time: '13:00-15:00'},
+  {id: 4, class: 'DMWM-A', Date: '15/10', Time: '13:00-15:00'},
+  {id: 5, class: 'DMWM-A', Date: '25/10', Time: '10:15-12:00'},
+  {id: 6, class: 'Tic-j', Date: '05/11', Time: '10:15-12:00'},
+  {id: 7, class: 'TIC-A', Date: '07/11', Time: '13:00-15:00'},
+  {id: 8, class: 'GLSI-B', Date: '22/11', Time: '13:00-15:00'},
+  {id: 9, class: 'GlSI-B', Date: '25/12', Time: '10:15-12:00'},
+  {id: 10, class: 'TIC-B', Date: '26/12', Time: '10:15-12:00'},
 ];
 
 @Component({
@@ -26,7 +26,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent {
-  displayedColumns: string[] = ['position', 'class', 'Date', 'Time'];
+  displayedColumns: string[] = ['id', 'class', 'Date', 'Time'];
   dataSource = ELEMENT_DATA;
 
 }

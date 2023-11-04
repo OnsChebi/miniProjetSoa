@@ -13,6 +13,9 @@ import { ForgetComponent } from './components/forget/forget.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { StudentsListComponent } from './components/students-list/students-list.component';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { MoyComponent } from './components/moy/moy.component';
+import { SuccessComponent } from './components/success/success.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,9 @@ import { StudentsListComponent } from './components/students-list/students-list.
     DashboardComponent,
     ForgetComponent,
     NavigationComponent,
-    StudentsListComponent
+    StudentsListComponent,
+    MoyComponent,
+    SuccessComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +38,7 @@ import { StudentsListComponent } from './components/students-list/students-list.
     FormsModule,
     ReactiveFormsModule,
     MatSidenavModule,
+    MatSlideToggleModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

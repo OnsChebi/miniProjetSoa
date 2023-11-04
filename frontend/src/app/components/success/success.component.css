@@ -83,16 +83,11 @@ mat-icon {
     margin-top: 2%;
     margin-bottom: 3%;
    }
-   table{
-    width: 100%;
-    text-align: center;
-    border: black solid 1px;
-   }
-   td,th{
-    border: black solid 1px;
-
-   }
+  
    mat-card{
     height: 95%;
     
+   }
+   .chart{
+    width: 40%;
    }

@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
 
-
-
 @Component({
-  selector: 'app-students-list',
-  templateUrl: './students-list.component.html',
-  styleUrls: ['./students-list.component.css']
+  selector: 'app-moy',
+  templateUrl: './moy.component.html',
+  styleUrls: ['./moy.component.css']
 })
-export class  StudentsListComponent {
+export class MoyComponent {
   student = [
     { firstName: 'John', lastName: 'Doe' },
     { firstName: 'Jane', lastName: 'Smith' },
@@ -15,5 +13,5 @@ export class  StudentsListComponent {
     { firstName: 'Bob', lastName: 'Brown' },
     { firstName: 'Eve', lastName: 'Davis' }
   ];
- 
+
 }
